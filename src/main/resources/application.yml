@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: DEPARTMENT-SERVICE
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:9006
 
 eureka:
   client:
