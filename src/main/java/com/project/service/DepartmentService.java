@@ -15,14 +15,14 @@ public class DepartmentService {
 
     public Department saveDepartment(Department department) {
 
-        log.info("Inside saveDepartment of DepartmentService");
+        log.info("Slf4j: Inside saveDepartment of DepartmentService");
         return departmentRepository.save(department);
 
     }
 
     public Department findDepartmentById(Long departmentId) {
 
-        log.info("Inside saveDepartment of DepartmentService");
+        log.info("Slf4j: Inside saveDepartment of DepartmentService");
         return departmentRepository.findByDepartmentId(departmentId);
 
     }

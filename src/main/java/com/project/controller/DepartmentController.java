@@ -17,7 +17,7 @@ public class DepartmentController {
     @PostMapping("/")
     public Department saveDepartment(@RequestBody Department department) {
 
-        log.info("Inside saveDepartment method of DepartmentController");
+        log.info("Slf4j: Inside saveDepartment method of DepartmentController");
         return  departmentService.saveDepartment(department);
 
     }
@@ -25,7 +25,7 @@ public class DepartmentController {
     @GetMapping("/{id}")
     public Department findDepartmentById(@PathVariable("id") Long departmentId) {
 
-        log.info("Inside findDepartmentById method of DepartmentController");
+        log.info("Slf4j: Inside findDepartmentById method of DepartmentController");
         return departmentService.findDepartmentById(departmentId);
 
     }
